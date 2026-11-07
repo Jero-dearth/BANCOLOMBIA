@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d0d10">
+<title>Descargar Bancolombia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#0d0d10;color:#fff;font-family:Archivo,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px 20px}
+.box{width:100%;max-width:420px;text-align:center}
+.logo{color:#FFD43B;margin:0 auto 18px;width:64px}
+h1{font-size:26px;letter-spacing:-.03em;margin:0 0 8px}
+p{color:#9a9aa4;font-size:14px;line-height:1.5;margin:0 0 22px}
+a.btn{display:block;background:#FFD43B;color:#141418;text-decoration:none;font-weight:700;font-size:15px;padding:16px;border-radius:16px;margin-bottom:10px}
+a.alt{display:block;color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:14px;border:1.5px solid #2a2a31;border-radius:16px}
+.small{font-size:11.5px;color:#6c6c76;margin-top:22px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="box">
+  <svg class="logo" viewBox="0 0 46 34" fill="currentColor"><g transform="skewX(-16)"><rect x="14" y="3" width="26" height="7.5" rx="2.4"/><rect x="10" y="13.5" width="26" height="7.5" rx="2.4"/><rect x="6" y="24" width="26" height="7.5" rx="2.4"/></g></svg>
+  <h1>Descarga Bancolombia</h1>
+  <p>App de demostración con login, registro y todas las pantallas funcionando. Instalación directa en Android.</p>
+  <a class="btn" id="apk" href="../../releases/latest/download/bancolombia.apk">Descargar APK</a>
+  <a class="alt" href="../app/index.html">Abrir en el navegador</a>
+  <div class="small">
+    Al instalar, activa "Instalar apps desconocidas" si Android lo pide.<br>
+    Versión debug, sin Play Store.
+  </div>
+</div>
+<script>
+(function(){
+  var h=location.hostname, repo=location.pathname.split('/')[1];
+  if(h.indexOf('github.io')>-1 && repo){
+    document.getElementById('apk').href='https://github.com/'+h.split('.')[0]+'/'+repo+'/releases/latest/download/bancolombia.apk';
+  }
+})();
+</script>
+</body>
+</html>

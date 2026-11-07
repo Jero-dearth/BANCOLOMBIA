@@ -1,0 +1,21 @@
+name: Reportar un fallo
+description: Cuéntame qué pantalla falla y qué esperabas
+labels: [bug]
+body:
+  - type: input
+    id: pantalla
+    attributes:
+      label: Pantalla
+      placeholder: Login, Inicio, Bolsillos...
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Versión de Android y modelo
